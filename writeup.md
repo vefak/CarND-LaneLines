@@ -20,6 +20,8 @@ Here a example image from highway
 
 ### Reflection
 
+### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+
 My pipeline consisted of 5 steps. 
 
 **1)** Convert to HSV: In order to perform color filtering.
@@ -82,3 +84,15 @@ WHITE_HIGH = np.array([ 150,  255, 255])
 ```
 
 
+### 2. Identify potential shortcomings with your current pipeline
+
+
+In the different light conditions, proposed algorithm may not be sufficient. It is tested in same conditions. 
+Also, the camera place is fixed which is another shortcoming
+In the curves, hough transform is not good.
+
+
+### 3. Suggest possible improvements to your pipeline
+
+In proposed method, I used color based method. Feature based methods may be better. Such as CNNs. 
+ ...
